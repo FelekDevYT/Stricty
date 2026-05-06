@@ -1,13 +1,10 @@
-package org.example.modules;
+package me.felek.stricty;
 
 import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.BlockItem;
-import org.example.ExamplePlugin;
-import org.rusherhack.client.api.RusherHackAPI;
+import org.example.Stricty;
 import org.rusherhack.client.api.events.client.EventUpdate;
-import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.core.event.subscribe.Subscribe;
 import org.rusherhack.core.setting.BooleanSetting;
@@ -23,7 +20,7 @@ public class AutoBridge extends ToggleableModule {
     private long lastSneakChange = 0;
 
     public AutoBridge() {
-        super("AutoBridge", "Automatically builds a bridge", ExamplePlugin.LEGIT_CATEGORY);
+        super("AutoBridge", "Automatically builds a bridge", Stricty.LEGIT_CATEGORY);
         registerSettings(autoSneak, sneakDelay, autoPlace, placeDelay);
     }
 

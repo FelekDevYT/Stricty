@@ -1,4 +1,4 @@
-package org.example.modules;
+package me.felek.stricty;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
@@ -6,11 +6,10 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
-import org.example.ExamplePlugin;
+import org.example.Stricty;
 import org.example.utils.PriorityMode;
 import org.rusherhack.client.api.RusherHackAPI;
 import org.rusherhack.client.api.events.client.EventUpdate;
-import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.client.api.utils.WorldUtils;
 import org.rusherhack.core.event.subscribe.Subscribe;
@@ -38,7 +37,7 @@ public class KillAuraStrict extends ToggleableModule {
     private Entity lastTarget = null;
 
     public KillAuraStrict() {
-        super("Killaura", "Attacks nearby enemies", ExamplePlugin.LEGIT_CATEGORY);
+        super("Killaura", "Attacks nearby enemies", Stricty.LEGIT_CATEGORY);
         registerSettings(tange, rotationStep, reactionTime, priority, players, animals, monsters, neutals);
     }
 

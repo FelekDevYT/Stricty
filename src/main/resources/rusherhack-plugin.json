@@ -1,11 +1,11 @@
 {
-  "Plugin-Class": "org.example.ExamplePlugin",
+  "Plugin-Class": "me.felek.stricty.Stricty",
   "Name": "${project.plugin_name}",
   "Version": "${project.plugin_version}",
-  "Description": "Example rusherhack plugin",
-  "URL": "https://github.com/RusherDevelopment/example-plugin",
+  "Description": "Stricty is a plugin that makes your game less visible to anti-cheats.",
+  "URL": "https://github.com/FelekDevYT/Stricty",
   "Authors": [
-    "John200410"
+    "FelekDevYT"
   ],
   "Minecraft-Versions": [
     "${project.minecraft_version}"

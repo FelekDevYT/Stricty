@@ -13,12 +13,12 @@ Stricty is a plugin that makes your game less visible to anti-cheats.
 > I don't guarantee anything! Use this plugin at your own risk.
 
 ## Key Features
-- Automatically builds a bridge
-- Automatically hops when on ground
-- Attacks nearby enemies
-- Swaps to axe when hitting a shielded player
-- Automatically throws health potions
-- TriggerBot for strict servers
+- AutoBridge - Automatically builds a bridge
+- AutoHop - Automatically hops when on ground
+- KillAuraStrict - Attacks nearby enemies
+- ShieldTrigger - Swaps to axe when hitting a shielded player
+- ThrowPots - Automatically throws health potions
+- TriggerPlus - TriggerBot for strict servers
 
 
 ## Installation

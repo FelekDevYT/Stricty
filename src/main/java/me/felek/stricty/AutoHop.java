@@ -1,9 +1,8 @@
-package org.example.modules;
+package me.felek.stricty;
 
 import net.minecraft.world.level.block.SlabBlock;
-import org.example.ExamplePlugin;
+import org.example.Stricty;
 import org.rusherhack.client.api.events.client.EventUpdate;
-import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.core.event.subscribe.Subscribe;
 import org.rusherhack.core.setting.BooleanSetting;
@@ -12,7 +11,7 @@ public class AutoHop extends ToggleableModule {
     private final BooleanSetting noSlabs = new BooleanSetting("NoSlabs", true);
 
     public AutoHop() {
-        super("AutoHop", "Automatically hops when on ground", ExamplePlugin.LEGIT_CATEGORY);
+        super("AutoHop", "Automatically hops when on ground", Stricty.LEGIT_CATEGORY);
         registerSettings(noSlabs);
     }
 

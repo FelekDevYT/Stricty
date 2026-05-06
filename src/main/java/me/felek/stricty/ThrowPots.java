@@ -1,14 +1,12 @@
-package org.example.modules;
+package me.felek.stricty;
 
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.item.PotionItem;
 import net.minecraft.world.item.alchemy.PotionContents;
-import net.minecraft.world.item.alchemy.Potions;
-import org.example.ExamplePlugin;
+import org.example.Stricty;
 import org.rusherhack.client.api.events.client.EventUpdate;
-import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.core.event.subscribe.Subscribe;
 import org.rusherhack.core.setting.NumberSetting;
@@ -20,7 +18,7 @@ public class ThrowPots extends ToggleableModule {
     private int tickCounter = 0;
 
     public ThrowPots() {
-        super("ThrowPots", "Automatically throws health potions", ExamplePlugin.LEGIT_CATEGORY);
+        super("ThrowPots", "Automatically throws health potions", Stricty.LEGIT_CATEGORY);
         registerSettings(healthThreshold, delay);
     }
 

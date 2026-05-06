@@ -1,15 +1,14 @@
-package org.example.modules;
+package me.felek.stricty;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.SwordItem;
-import org.example.ExamplePlugin;
+import org.example.Stricty;
 import org.example.utils.PvpMode;
 import org.rusherhack.client.api.RusherHackAPI;
 import org.rusherhack.client.api.events.client.EventUpdate;
-import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.core.event.subscribe.Subscribe;
 import org.rusherhack.core.setting.BooleanSetting;
@@ -37,7 +36,7 @@ public class TriggerPlus extends ToggleableModule {
     private final Random random = new Random();
 
     public TriggerPlus() {
-        super("TriggerPlus", "TriggerBot for strict servers", ExamplePlugin.LEGIT_CATEGORY);
+        super("TriggerPlus", "TriggerBot for strict servers", Stricty.LEGIT_CATEGORY);
         this.registerSettings(pvpMode, jitter, onlyWeapon, onlyWhenHolding, noShield, cps, missChance, players, monsters, neutals, animals);
     }
 

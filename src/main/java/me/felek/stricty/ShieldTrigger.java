@@ -1,9 +1,9 @@
-package org.example.modules;
+package me.felek.stricty;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.phys.HitResult;
-import org.example.ExamplePlugin;
+import org.example.Stricty;
 import org.rusherhack.client.api.events.client.EventUpdate;
 import org.rusherhack.client.api.feature.module.ToggleableModule;
 import org.rusherhack.core.event.subscribe.Subscribe;
@@ -18,7 +18,7 @@ public class ShieldTrigger extends ToggleableModule {
     private int timer = 0;
 
     public ShieldTrigger() {
-        super("ShieldTrigger", "Swaps to axe when hitting a shielded player", ExamplePlugin.LEGIT_CATEGORY);
+        super("ShieldTrigger", "Swaps to axe when hitting a shielded player", Stricty.LEGIT_CATEGORY);
         registerSettings(swapDelay, swapBack);
     }
 

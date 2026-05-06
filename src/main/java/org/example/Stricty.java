@@ -1,11 +1,11 @@
 package org.example;
 
-import org.example.modules.*;
+import me.felek.stricty.*;
 import org.rusherhack.client.api.RusherHackAPI;
 import org.rusherhack.client.api.feature.module.ModuleCategory;
 import org.rusherhack.client.api.plugin.Plugin;
 
-public class ExamplePlugin extends Plugin {
+public class Stricty extends Plugin {
 
 	public static ModuleCategory LEGIT_CATEGORY = ModuleCategory.register("Legit");
 	
